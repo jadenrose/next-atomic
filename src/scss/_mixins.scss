@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+@mixin button-reset {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}

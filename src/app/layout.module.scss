@@ -1,0 +1,23 @@
+$topbar-height: 7rem;
+
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: $topbar-height calc(100vh - $topbar-height);
+  background: $black;
+  color: $white;
+  font-weight: 400;
+}
+
+.main {
+  width: 100vw;
+}
+
+.tableSection {
+  padding: 0 2em 1em;
+  height: 100%;
+}

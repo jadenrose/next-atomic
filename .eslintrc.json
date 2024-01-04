@@ -1,0 +1,45 @@
+{
+  "extends": ["eslint:recommended", "next/core-web-vitals"],
+  "rules": {
+    "no-undef": "off",
+    "no-duplicate-imports": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "no-template-curly-in-string": "warn",
+    "dot-notation": "warn",
+    "func-style": "warn",
+    "no-lonely-if": "warn",
+    "no-undef-init": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-warning-comments": ["error", { "terms": ["@TODO"] }],
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "prefer-template": "warn",
+    "sort-imports": [
+      "error",
+      { "ignoreCase": true, "ignoreDeclarationSort": true }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ],
+        "pathGroups": [
+          { "pattern": "react", "group": "external", "position": "before" }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ]
+  },
+  "settings": { "import/internal-regex": "^@/" }
+}
