@@ -14,6 +14,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
     <html lang="en">
       <head>
         <title>Next.js Atomic</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       </head>
       <body className={classNames(ubuntu.className, styles.body)}>
         <header></header>

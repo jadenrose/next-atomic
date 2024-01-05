@@ -1,1 +1,8 @@
 export { default } from './Text'
+export { default as H1 } from './variants/H1'
+export { default as H2 } from './variants/H2'
+export { default as H3 } from './variants/H3'
+export { default as H4 } from './variants/H4'
+export { default as H5 } from './variants/H5'
+export { default as H6 } from './variants/H6'
+export { default as P } from './variants/P'

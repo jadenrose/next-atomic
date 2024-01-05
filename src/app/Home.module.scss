@@ -1,0 +1,81 @@
+.logo {
+  $scale: 0.9;
+
+  @keyframes logoSpin {
+    0% {
+      scale: $scale;
+      rotate: 0deg;
+    }
+
+    75% {
+      scale: 1;
+    }
+
+    95% {
+      scale: $scale;
+    }
+
+    100% {
+      scale: $scale;
+      rotate: 360deg;
+    }
+  }
+
+  animation: logoSpin 2s forwards cubic-bezier(0.76, 0.22, 0.13, 1);
+}
+
+.spinContainer {
+  @keyframes slowSpin {
+    0% {
+      rotate: 0deg;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  margin-bottom: 4rem;
+  animation: slowSpin 60s infinite linear;
+}
+
+.welcomeSection {
+  @keyframes backgroundPulse {
+    from {
+      background-size: 100%;
+    }
+
+    to {
+      background-size: 130%;
+    }
+  }
+
+  background: radial-gradient(
+      circle at top 20vh left 40vw,
+      transparent 0%,
+      transparent 70%,
+      rgba($accent-blue, 0.8) 100%
+    ),
+    radial-gradient(
+      circle at bottom -10vh right 40vw,
+      transparent 0%,
+      transparent 80%,
+      rgba($accent-green, 0.8) 100%
+    );
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: backgroundPulse 10s alternate infinite;
+}
+
+.welcomeParagraph {
+  margin-bottom: 3rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+}

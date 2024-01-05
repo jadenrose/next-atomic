@@ -1,4 +1,52 @@
 .base {
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02em;
   line-height: 1;
+  margin: 0 auto 0 auto;
+  max-width: 70ch;
+}
+
+.h1 {
+  line-height: 1.1;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.h2 {
+  line-height: 1.1;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+.h3 {
+  line-height: 1.1;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+.h4 {
+  line-height: 1.1;
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+.h5 {
+  line-height: 1.1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
 }

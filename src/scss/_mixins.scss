@@ -9,3 +9,10 @@
   font-family: inherit;
   cursor: pointer;
 }
+
+@mixin gutter {
+  width: calc(100vw - $gutter-width);
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+}

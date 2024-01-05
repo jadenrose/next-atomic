@@ -1,0 +1,54 @@
+$gradient: linear-gradient(310deg, $accent-blue 0%, $accent-green 100%);
+$border-thickness: 4px;
+
+.button {
+  @include button-reset;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 1rem 1.4rem;
+  border-radius: 0.2rem;
+  transition: transform 0.15s ease-out;
+  background: $gradient;
+  border: $border-thickness solid transparent;
+  position: relative;
+  background-clip: padding-box;
+  height: fit-content;
+  width: fit-content;
+
+  .inner {
+    transition: transform 0.1s ease-out;
+  }
+
+  &:hover .inner {
+    transform: translateY(2%) scale(104%);
+  }
+
+  &:before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border-thickness;
+    border-radius: inherit;
+    background: $gradient;
+  }
+}
+
+.secondary {
+  background: $black;
+  background-clip: padding-box;
+
+  .inner {
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

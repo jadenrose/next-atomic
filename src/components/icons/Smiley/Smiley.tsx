@@ -1,12 +1,18 @@
 import React from 'react'
 
+import classNames from '@/utils/classNames'
+
 import styles from '../Icon.module.scss'
 import { I_IconProps } from '../Icon.types'
 
-const Smiley = ({ color = 'currentColor', size }: I_IconProps) => {
+const Smiley = ({
+  color = 'currentColor',
+  size,
+  inline = false,
+}: I_IconProps) => {
   return (
     <svg
-      className={styles.icon}
+      className={classNames(styles.icon, inline && styles.inline)}
       style={{
         maxWidth: size,
         maxHeight: size,
