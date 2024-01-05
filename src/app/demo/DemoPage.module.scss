@@ -1,0 +1,21 @@
+.backButton {
+  position: sticky;
+  top: 0;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.preamble {
+  padding-top: 1rem;
+}
+
+.anchor {
+  @include gradient-text;
+
+  font-weight: 700;
+  text-decoration-color: $accent-green;
+}
+
+.cardButton {
+  width: 100%;
+}

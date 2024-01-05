@@ -24,10 +24,10 @@ const Home = () => {
         and design practices.
       </P>
       <div className={styles.buttonContainer}>
-        <Button variant="primary">
+        <Button variant="primary" href="https://google.com" target="_blank">
           <Text>Read Docs</Text>
         </Button>
-        <Button variant="secondary">
+        <Button variant="secondary" href="/demo">
           <Text>Atomic Demo</Text>
         </Button>
       </div>

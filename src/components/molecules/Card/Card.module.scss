@@ -1,3 +1,24 @@
 .container {
-  background: #fab;
+  background: rgba($black, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 3px 5px 20px 3px rgba($accent-blue, 0.2),
+    3px 5px 50px 2px rgba($accent-green, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .cardTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.cardIntro {
+  margin-bottom: 1.5rem;
+}
+
+.cardSubtitle {
+  font-size: 0.875rem;
 }

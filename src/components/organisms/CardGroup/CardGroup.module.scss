@@ -1,0 +1,24 @@
+.section {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(
+    310deg,
+    rgba($accent-green, 0.2) 0%,
+    rgba($accent-blue, 0.2) 100%
+  );
+  margin: 3rem auto;
+  border-radius: 1rem;
+  width: fit-content;
+  max-width: calc(100% - 16rem);
+  box-shadow: 0px 0 0 1px rgba($accent-blue, 0.3),
+    3px 8px 50px rgba($accent-green, 0.3);
+
+  .subtitle {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
